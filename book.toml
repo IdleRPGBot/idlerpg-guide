@@ -1,0 +1,6 @@
+[book]
+authors = ["Jens Reidel"]
+language = "en"
+multilingual = false
+src = "src"
+title = "IdleRPG Guide"
