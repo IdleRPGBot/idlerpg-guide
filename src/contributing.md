@@ -32,7 +32,7 @@ To do so, on your computer, navigate to a directory you want to store the book i
 ```rs
 $ git clone https://git.travitia.xyz/<your username>/idlerpg-guide.git
 ```
-*Make sure to replace <your username> with your actual username. In my case, it would be `https://git.travitia.xyz/StarSpriteChippy/idlerpg-guide.git`.* <br>
+*Make sure to replace \<your username\> with your actual username. In my case, it would be `https://git.travitia.xyz/StarSpriteChippy/idlerpg-guide.git`.* <br>
 This will create a new directory named "idlerpg-guide". In it, you will find the book's files. The actual contents of the book are found in the `src` directory. <br>
 Here, you can add new files, edit existing ones, etc.
 
@@ -52,17 +52,28 @@ Markdown is used to create **emphasis** on certain bits of text, we encourage yo
 If you want to make a change to a page, i.e. correct text or write some new blocks, simply open the right file in your file editor and change the text. <br>
 There are no further things you have to pay mind to.
 
+
+## Previewing changes
+*NOTE: This will only work if you have cargo and the mdbook crate installed* <br>
+If you want to check what your changes look like before you save them, mdbook offers options. <br>
+Open your terminal in the project directory `idlerpg-guidebook` and enter the following:
+```rs
+$ mdbook build
+```
+This will create a new directory called `book`. In it, find `index.html` and open it on your browser. You can preview your changes as many times as you like before committing them.
+
+
 ## Saving (committing) and uploading (pushing) your work
 Saving your work using Ctrl+S is not enough if you want to publish it; you'll want to *commit* it, so that the version control system Git knows this is a new version.<br>
 To do this, open your terminal in the `idlerpg-guidebook` directory and use the following commands:
 ```rs
-> git add ./src/page.md
-> git commit -m "Commit message here!"
-> git push 
+$ git add ./src/page.md
+$ git commit -m "Commit message here!"
+$ git push 
 ```
-`$ git add` marks the file(s) as ready to commit. This is useful in projects, where you may have changes in multiple files, but only want to commit a few. <br>
-`$ git commmit` commitsthe files in git. The `-m "Commit message here!"` is known as the commit message, in it you should describe briefly what you did. <br>
-`$ git push` uploads, or pushes the commited files to a remote repository, in this case, your repository on our GitLab. From there, you can create a merge request to have your changes implemented into our project. <br><br>
+- `$ git add` marks the file(s) as ready to commit. This is useful in projects, where you may have changes in multiple files, but only want to commit a few. <br>
+- `$ git commmit` commits the files in git. The `-m "Commit message here!"` is known as the commit message. In it, you should describe briefly what you did. <br>
+- `$ git push` uploads, or pushes the commited files to a remote repository, in this case, your repository on our GitLab. From there, you can create a merge request to have your changes implemented into our project. <br><br>
 
 Commited files are different to saved files in that any commit exists simultaneously. If you save a file, make changes and save again, the old save is gone, but different commmits can be accessed at all times. <br><br>
 
