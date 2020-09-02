@@ -108,7 +108,7 @@ After pushing, a CI (continuous integration) on GitLab will build the html files
 
 You can find the zip files in your own repo, in the CI/CD tab, subsection Pipelines. Find the latest pipeline, and in the right side, download the html artifact. Simply unpack the downloaded `.zip` archive and open `index.html` in your preferred web browser, et voilà, you can now see what your changes look like in action.
 
-![image](https://i.imgur.com/Mvhgzlw.png) ![image](https://i.imgur.com/wc5IqQa.png)
+![image](img/ci-tab.png) ![image](img/download-artifacts.png)
 
 _Of course, previewing changes this way is a bit tedious, so we recommend getting rust and the mdbook crate and using the method mentioned above._
 
