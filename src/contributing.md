@@ -70,7 +70,8 @@ There are no further things you have to pay mind to.
 
 ## Previewing changes
 
-_NOTE: This will only work if you have cargo and the mdbook crate installed_
+_NOTE: This will be easier if you have cargo and the mdbook crate installed. If you don't have rust or the mdbook crate installed, you can preview your changes after committing changes. More on that in the next section._
+
 If you want to check what your changes look like before you save them, mdbook offers options.
 
 Open your terminal in the project directory `idlerpg-guidebook` and enter the following:
@@ -102,6 +103,14 @@ Commited files are different to saved files in that any commit exists simultaneo
 
 Make sure to replace `./src/page.md` with the file path to the newly added and/or changed files. `SUMMARY.md` should always be included if you created a new page.
 Also replace `Commit message here!` with a short note on what you did, i.e. `Added new page contributing.md`. Commit messages have a maximum of 50 characters, so keep it short and spicy!
+
+After pushing, a CI (continuous integration) on GitLab will build the html files and bundle them in a `.zip` archive. That way, you can download the files and view them in your web browser.
+
+You can find the zip files in your own repo, in the CI/CD tab, subsection Pipelines. Find the latest pipeline, and in the right side, download the html artifact. Simply unpack the downloaded `.zip` archive and open `index.html` in your preferred web browser, et voilà, you can now see what your changes look like in action.
+
+![image](https://i.imgur.com/Mvhgzlw.png) ![image](https://i.imgur.com/wc5IqQa.png)
+
+_Of course, previewing changes this way is a bit tedious, so we recommend getting rust and the mdbook crate and using the method mentioned above._
 
 ## Creating a merge request
 
