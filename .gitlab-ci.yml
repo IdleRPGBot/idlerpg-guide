@@ -5,7 +5,7 @@ before_script:
   - cargo install mdbook
 
 stages:
-  - Pretting Linting
+  - Prettier Linting
   - Build HTML
 
 prettier:
