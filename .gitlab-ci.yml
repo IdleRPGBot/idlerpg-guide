@@ -1,0 +1,24 @@
+image: "alpine:edge"
+
+before_script:
+  - apk add npm cargo
+  - cargo install mdbook
+
+stages:
+  - Pretting Linting
+  - Build HTML
+
+prettier:
+  stage: Prettier Linting
+  script:
+    - npx prettier --check src/*.md
+
+html:
+  stage: Build HTML
+  script:
+    - mdbook build
+    - zip -r book.zip book/
+  artifacts:
+    paths:
+      - book.zip
+    expire_in: 1 day

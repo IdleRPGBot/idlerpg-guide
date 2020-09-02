@@ -2,23 +2,23 @@
 
 ## Prerequisites
 
--   Version control system Git
+- Version control system Git
 
-    -   Windows: [Download](https://git-scm.com/download/win) and install Git
-    -   Mac: `$ brew install git`
-    -   Linux: Use your package manager, for example `$ apt install git` , `$ dnf install git` or `$ pacman -S git`. Keep in mind that your distribution might use a different one.
+  - Windows: [Download](https://git-scm.com/download/win) and install Git
+  - Mac: `$ brew install git`
+  - Linux: Use your package manager, for example `$ apt install git` , `$ dnf install git` or `$ pacman -S git`. Keep in mind that your distribution might use a different one.
 
--   A file editor of your choice
+- A file editor of your choice
 
-    -   If you do not have a file editor installed, online editors such as [StackEdit](https://stackedit.io) or GitLab's built-in one will work as well
+  - If you do not have a file editor installed, online editors such as [StackEdit](https://stackedit.io) or GitLab's built-in one will work as well
 
--   A user account on [our GitLab](https://git.travitia.xyz/)
+- A user account on [our GitLab](https://git.travitia.xyz/)
 
 Optional
 
--   Rust package manager Cargo and the mdbook crate
-    -   [Download](https://www.rust-lang.org/tools/install) and install using these instructions
-    -   Install the mdbook crate using `$ cargo install mdbook`
+- Rust package manager Cargo and the mdbook crate
+  - [Download](https://www.rust-lang.org/tools/install) and install using these instructions
+  - Install the mdbook crate using `$ cargo install mdbook`
 
 ## Creating your fork
 
@@ -94,9 +94,9 @@ $ git commit -m "Commit message here!"
 $ git push
 ```
 
--   `$ git add` marks the file(s) as ready to commit. This is useful in projects, where you may have changes in multiple files, but only want to commit a few.
--   `$ git commmit` commits the files in git. The `-m "Commit message here!"` is known as the commit message. In it, you should describe briefly what you did.
--   `$ git push` uploads, or pushes the commited files to a remote repository, in this case, your repository on our GitLab. From there, you can create a merge request to have your changes implemented into our project.
+- `$ git add` marks the file(s) as ready to commit. This is useful in projects, where you may have changes in multiple files, but only want to commit a few.
+- `$ git commmit` commits the files in git. The `-m "Commit message here!"` is known as the commit message. In it, you should describe briefly what you did.
+- `$ git push` uploads, or pushes the commited files to a remote repository, in this case, your repository on our GitLab. From there, you can create a merge request to have your changes implemented into our project.
 
 Commited files are different to saved files in that any commit exists simultaneously. If you save a file, make changes and save again, the old save is gone, but different commmits can be accessed at all times.
 
