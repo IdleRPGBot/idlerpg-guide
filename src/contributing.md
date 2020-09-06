@@ -14,6 +14,8 @@
 
 - A user account on [our GitLab](https://git.travitia.xyz/)
 
+> __NOTE:__ If you don't have a computer, or your computer does not allow installing this software (i.e. school computers) but would still like to help, check [Contributing with GitLab alone](./contributing-2.md)
+
 Optional
 
 - Rust package manager Cargo and the mdbook crate
