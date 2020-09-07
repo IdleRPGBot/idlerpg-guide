@@ -7,24 +7,24 @@ Once you have created your user account on [our GitLab](https://git.travitia.xyz
 
 ## Forking the project
 
-As regular users don't have file editing permissions in the main repository, you should create a fork - your own copy of the repository - to make changes. 
-Those changes/additions can later be added into the main repository via **Merge Requests**. 
+As regular users don't have file editing permissions in the main repository, you should create a fork - your own copy of the repository - to make changes.
+Those changes/additions can later be added into the main repository via **Merge Requests**.
 
-To fork the repository, go to the [main one](https://git.travitia.xyz/Kenvyra/idlerpg-guide) and find the button labelled "Fork" toward the top right. 
-Once you click it, you'll be prompted to select a "namespace". 
-Simply select your user account, and GitLab will create a fork of the repository for you. 
+To fork the repository, go to the [main one](https://git.travitia.xyz/Kenvyra/idlerpg-guide) and find the button labelled "Fork" toward the top right.
+Once you click it, you'll be prompted to select a "namespace".
+Simply select your user account, and GitLab will create a fork of the repository for you.
 This could take a minute or two.
 
 From here, you have two options:
 
 1. Using the Web Editor
-    - This is usually not as ressource intensive but makes editing files a bit slower
-    - Editing more than one file at once is also not possible, requiring multiple commits
+   - This is usually not as ressource intensive but makes editing files a bit slower
+   - Editing more than one file at once is also not possible, requiring multiple commits
 2. Using the Web IDE
-    - IDE stands for _integrated development environment_
-    - The IDE requires more ressources, but is also a more powerful tool
-    - With the IDE, you can preview formatted Markdown right as you write it
-    
+   - IDE stands for _integrated development environment_
+   - The IDE requires more ressources, but is also a more powerful tool
+   - With the IDE, you can preview formatted Markdown right as you write it
+
 For a sense of completion, I will cover both methods here.
 
 > Note: The following steps are all performed in the [main repository](https://git.travitia.xyz/Kenvyra/idlerpg-guide). Find and edit the files there, GitLab will automatically figure out the rest. This will make creating merge requests much easier.
