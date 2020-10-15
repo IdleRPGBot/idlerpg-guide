@@ -1,6 +1,6 @@
 # Boosters
 
-Something else to keep in mind is that you can buy and use specific boosters that can boost your adventures in various ways. 
+Something else to keep in mind is that you can buy and use specific boosters that can boost your adventures in various ways.
 
 To access the shop to buy boosters, simply use the command `$store`. It explains everything you need to know about boosters.  
 If you want to buy in bulk then simply add the amount you want to buy at the end of the command. For example, if you want to buy 10 time boosters, then you will type out the command as so: `$purchase time 10`.

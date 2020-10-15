@@ -2,7 +2,7 @@
 
 To embark on an adventure, you use `$adventure [1-30]`.  
 Keep in mind that the adventures you can go on relate to your level. For example, when you're on level 2 you can only do `$adventure 1` or `$adventure 2`.  
-The adventure number corresponds to the  and the amount of time needed, The higher the difficulty, the higher the chance of getting loot or more powerful gear.  
+The adventure number corresponds to the and the amount of time needed, The higher the difficulty, the higher the chance of getting loot or more powerful gear.  
 To check how long until your adventure finishes, use `$status`, and once the adventure finishes you can use `$status` again to complete it and collect your reward! From there you can go on another adventure.  
 To see how experienced you are and how much more you need to train to level up, use `$xp`.  
 Of course, when starting out, you can't do some of the higher-level adventures, because:

@@ -3,19 +3,19 @@
 - [Introduction](./introduction.md)
 
 - [The Basics](./basics/basics.md)
-    - [Getting Started](./basics/getting_started.md)
-    - [Levels]()
-    - [Class](./basics/class.md)
-        - [Ranger]()
-        - [Ritualist]()
-    - [Race](./basics/race.md)
-    - [Gods]()
-      - [Favor](./basics/favor.md)
-      - [Luck](./basics/luck.md)
-    - [Adventures](./basics/adventures.md)
-      - [Boosters](./basics/boosters.md)
-  
+  - [Getting Started](./basics/getting_started.md)
+  - [Levels]()
+  - [Class](./basics/class.md)
+    - [Ranger]()
+    - [Ritualist]()
+  - [Race](./basics/race.md)
+  - [Gods]()
+    - [Favor](./basics/favor.md)
+    - [Luck](./basics/luck.md)
+  - [Adventures](./basics/adventures.md)
+    - [Boosters](./basics/boosters.md)
 - [Player Interaction](./player_interaction/player_interaction.md)
+
   - [Trading](./player_interaction/trading.md)
   - [Battling]()
     - [Active Battles]()
@@ -28,6 +28,7 @@
   - [Alliances]()
 
 - [Making Money]()
+
   - [Solo commands]()
     - [Daily]()
     - [Vote]()
@@ -46,6 +47,7 @@
 - [Advanced Tactics]()
 
 - [Endgame]()
+
   - [Raids and raidtstats]()
 
 - [Conclusion]()
