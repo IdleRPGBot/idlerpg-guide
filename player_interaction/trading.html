@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Trading - IdleRPG Guide</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../basics/basics.html"><strong aria-hidden="true">2.</strong> The Basics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../basics/getting_started.html"><strong aria-hidden="true">2.1.</strong> Getting Started</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.2.</strong> Levels</div></li><li class="chapter-item expanded "><a href="../basics/class.html"><strong aria-hidden="true">2.3.</strong> Class</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.3.1.</strong> Ranger</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.3.2.</strong> Ritualist</div></li></ol></li><li class="chapter-item expanded "><a href="../basics/race.html"><strong aria-hidden="true">2.4.</strong> Race</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.5.</strong> Gods</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../basics/favor.html"><strong aria-hidden="true">2.5.1.</strong> Favor</a></li><li class="chapter-item expanded "><a href="../basics/luck.html"><strong aria-hidden="true">2.5.2.</strong> Luck</a></li></ol></li><li class="chapter-item expanded "><a href="../basics/adventures.html"><strong aria-hidden="true">2.6.</strong> Adventures</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../basics/boosters.html"><strong aria-hidden="true">2.6.1.</strong> Boosters</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../player_interaction/player_interaction.html"><strong aria-hidden="true">3.</strong> Player Interaction</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../player_interaction/trading.html" class="active"><strong aria-hidden="true">3.1.</strong> Trading</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.2.</strong> Battling</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">3.2.1.</strong> Active Battles</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.3.</strong> Marriage</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">3.3.1.</strong> Children</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.3.2.</strong> Lovescore</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.4.</strong> Guilds</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">3.4.1.</strong> What are Guilds?</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.4.2.</strong> How do I make one?</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.5.</strong> Alliances</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Making Money</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Solo commands</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.1.</strong> Daily</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.2.</strong> Vote</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.3.</strong> Adventures? (not sure if this should backlink to the basics)</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.4.</strong> Merching</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.5.</strong> Stealing</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.6.</strong> Loot</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.7.</strong> Family Events</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.2.</strong> Transactions</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.2.1.</strong> Selling to players</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.2.2.</strong> Selling to the market</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.3.</strong> Patreon?</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.4.</strong> Miscellaneous</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.5.</strong> Cooldowns</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> Advanced Tactics</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Endgame</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">6.1.</strong> Raids and raidtstats</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Conclusion</div></li><li class="chapter-item expanded "><a href="../contributing.html"><strong aria-hidden="true">8.</strong> Contributing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../contributing-2.html"><strong aria-hidden="true">8.1.</strong> Contributing with GitLab alone</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">IdleRPG Guide</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="trading"><a class="header" href="#trading">Trading</a></h1>
+<p>This section will introduce you to the <code>$trade</code> command, as well as other ways to trade certain types of items.</p>
+<h2 id="crates"><a class="header" href="#crates">Crates</a></h2>
+<p>To see what crates you have, <code>$crates</code> gives a breakdown by each type. Crates can be opened (<code>$open [type]</code>), sold, traded or given to other IdleRPG players.</p>
+<p>Crate drop chances for range of stats from each crate rarity:</p>
+<p><em>we gotta find a way to add emojis here</em></p>
+<ul>
+<li>Common:
+<ul>
+<li>50 %: 1-9</li>
+<li>30 %: 10-19</li>
+<li>20 %: 20-30</li>
+</ul>
+</li>
+<li>Uncommon:
+<ul>
+<li>50 %: 10-19</li>
+<li>30 %: 20-29</li>
+<li>20 %: 30-35</li>
+</ul>
+</li>
+<li>Rare:
+<ul>
+<li>50 %: 20-29</li>
+<li>30 %: 30-34</li>
+<li>20 %: 35-40</li>
+</ul>
+</li>
+<li>Magic:
+<ul>
+<li>50 %: 30-34</li>
+<li>30 %: 35-40</li>
+<li>20 %: 41-45</li>
+</ul>
+</li>
+<li>Legendary:
+<ul>
+<li>equally likely: 41-50</li>
+</ul>
+</li>
+</ul>
+<p><em>is there a way to make this into a comprehensive table?</em><br />
+<em>also, we need text on how to actually get crates</em></p>
+<h2 id="items"><a class="header" href="#items">Items</a></h2>
+<p>Items are equippable weapons that you can use to increase your adventure survivability rate, and make you stronger in all battle-related aspects of the game.</p>
+<p>You can get items by finishing adventures, buying them off the market or other players, opening crates or buying them off <code>$trader</code>.<br />
+There are two main categories of items, two handed and single handed, while single handed weapons can be further categorised into left handed, right handed, or any handed.<br />
+All items deal damage except for the shield, as the shield gives you armor.</p>
+<h3 id="types"><a class="header" href="#types">Types</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Item Type</th><th>Hand</th><th>Description</th></tr></thead><tbody>
+<tr><td>Axe</td><td>any</td><td>An any handed weapon that has an axe head attached to a handle.</td></tr>
+<tr><td>Dagger</td><td>any</td><td>An any handed weapon that is a short knife with a pointed and a double edged blade.</td></tr>
+<tr><td>Hammer</td><td>any</td><td>An any handed weapon with a heavy metal head mounted at right angles at the end of a handle.</td></tr>
+<tr><td>Knife</td><td>any</td><td>An any handed weapon that is sharp but single edged.</td></tr>
+<tr><td>Sword</td><td>any</td><td>An any handed weapon with a long metal blade and a hilt with a hand guard. It is one of the older item types in the game.</td></tr>
+<tr><td>Shield</td><td>left</td><td>A left handed item that protects you from damage, it is the only item in the game that gives you armor. It is also one of the older item types in the game that came along with swords.</td></tr>
+<tr><td>Spear</td><td>right</td><td>A right handed weapon with a pointed tip, typically of steel, and a long shaft, used for thrusting or throwing.</td></tr>
+<tr><td>Wand</td><td>right</td><td>A right handed weapon that is a stick with a rune attached at the end.</td></tr>
+<tr><td>Bow</td><td>both</td><td>A two-handed weapon that is a curved piece of material that forms a C-shape with a string on the two tips, arrows are automatically in bows and are infinite.</td></tr>
+<tr><td>Howlet</td><td>both</td><td>A long black stick used as a two-handed blunt weapon.</td></tr>
+<tr><td>Scythe</td><td>both</td><td>A two handed weapon used for cutting crops such as grass or wheat, with a long curved blade at the end of a long pole attached to which are one or two short handles.</td></tr>
+</tbody></table>
+</div>
+<blockquote>
+<p><strong>Note</strong>: Both handed weapons (also known as 2-handed weapons) can only be equipped one at a time, right handed means it's a single handed weapon that you can only use on your right hand; similarly for left, and any means it's a single handed weapon that can be equipped on either hand.<br />
+You cannot have two right handed weapons equipped at the same time, nor too left handeds. You can, however, have two any-handed weapons at a time. The equip logic in IdleRPG will let you know if there was an error while equipping.</p>
+</blockquote>
+<h3 id="stat"><a class="header" href="#stat">Stat</a></h3>
+<p>The stat of an item determines how effective it is, the higher an item's stat is, the more effective it is.</p>
+<p>Stats means both armor and damage. If a shield has a 41 stat, it means the shield will give you 41 armor and 0 damage. If an any damage dealing weapon's stat is 41, it means it will do 41 damage and 0 armor.<br />
+Some other ways you can obtain stats are by races, which give you a total of 4 stats, as well as classes such as warrior, which gives 1 extra armor stat per evolution.</p>
+<p>The highest stat a single handed item can be is 50, which <em>can</em> be obtained by opening a legendary crate. The highest stat a two-handed weapon can be is 100, which, too, can be obtained by opening a legendary crate.</p>
+<h3 id="upgrading"><a class="header" href="#upgrading">Upgrading</a></h3>
+<p>Upgrading is a feature which allows you to increase an item's stat.</p>
+<p>The stat of an item can be upgraded up to stat 41 for single handed weapons and 82 for two-handed weapons.<br />
+The only way to get an item greater than 41 for single handed items and 82 for two-handed weapons is by opening high rarity crates or buying them from other players.</p>
+<p>To upgrade an item's stat, use <code>$upgrade [ItemID]</code>. This will prompt a confirmation message which you can agree to by reacting with ✅.<br />
+Upgrading an item's stat costs 250 times the stat you are upgrading, which means, for an example, upgrading an 80 stat item costs $20,000, as 250×80 is 20,000.</p>
+<h2 id="money"><a class="header" href="#money">Money</a></h2>
+<p><em>section unfinished</em></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../player_interaction/player_interaction.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../contributing.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../player_interaction/player_interaction.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../contributing.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
