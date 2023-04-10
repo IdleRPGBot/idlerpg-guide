@@ -1,0 +1,14 @@
+name: Lint markdown
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run prettier
+        run: npx prettier --check src/*.md
