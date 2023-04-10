@@ -2,7 +2,7 @@
 
 GitHub offers other ways of contributing if you cannot install Git on your system. The online markdown editor is a powerful tool for editing the book and previewing changes right away.
 
-Once you have created your user account on [our GitHub](https://github.com/) and read the main [Contributing page](./contributing.md), you're ready to go!
+Once you have created your user account on [GitHub](https://github.com/) and read the main [Contributing page](./contributing.md), you're ready to go!
 
 ## Forking the project
 
