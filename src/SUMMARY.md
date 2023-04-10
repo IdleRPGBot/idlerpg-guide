@@ -53,4 +53,4 @@
 - [Conclusion]()
 
 - [Contributing](./contributing.md)
-  - [Contributing with GitLab alone](./contributing-2.md)
+  - [Contributing with GitHub alone](./contributing-2.md)

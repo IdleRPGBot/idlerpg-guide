@@ -10,13 +10,13 @@
 
 - A file editor of your choice
 
-  - If you do not have a file editor installed, online editors such as [StackEdit](https://stackedit.io) or GitLab's built-in one will work as well
+  - If you do not have a file editor installed, online editors such as [StackEdit](https://stackedit.io) or GitHub's built-in one will work as well
 
-- A user account on [our GitLab](https://git.travitia.xyz/)
+- A user account on [GitHub](https://github.com/)
 
-> **NOTE:** If you don't have a computer, or your computer does not allow installing this software (i.e. school computers) but would still like to help, check [Contributing with GitLab alone](./contributing-2.md)
+> **NOTE:** If you don't have a computer, or your computer does not allow installing this software (i.e. school computers) but would still like to help, check [Contributing with GitHub alone](./contributing-2.md)
 
-Optional
+Optional, but heavily recommended:
 
 - Rust package manager Cargo and the mdbook crate
   - [Download](https://www.rust-lang.org/tools/install) and install using these instructions
@@ -26,9 +26,9 @@ Optional
 
 In terms of Git repositories, a fork is a separate version of a project, usually for another user to make changes and create merge requests. That's exactly what we'll do!
 
-Visit [the original repository](https://git.travitia.xyz/Kenvyra/idlerpg-guide) and find the "Fork" button. Click it, select your account and GitLab will create a fork for you.
+Visit [the original repository](https://github.com/IdleRPGBot/idlerpg-guide) and find the "Fork" button. Click it, select your account and GitHub will create a fork for you.
 
-The fork will have its own URL, being `https://git.travitia.xyz/<your username>/idlerpg-guide`. To copy it, find the blue "Clone" button and click the Copy Text button.
+The fork will have its own URL, being `https://github.com/<your username>/idlerpg-guide`. To copy it, find the green "Code" button and copy the URL.
 
 Congratulations, you now have your own fork of this book! Now we need to get it onto your computer.
 
@@ -39,10 +39,10 @@ To start writing contents, you first need to get your own copy of - what we refe
 To do so, on your computer, navigate to a directory you want to store the book in. Next, run the following command in your terminal:
 
 ```sh
-$ git clone https://git.travitia.xyz/<your username>/idlerpg-guide.git
+$ git clone git@github.com:<your username>/idlerpg-guide.git
 ```
 
-_Make sure to replace \<your username\> with your actual username. In my case, it would be `https://git.travitia.xyz/StarSpriteChippy/idlerpg-guide.git`._
+_Make sure to replace \<your username\> with your actual username. In my case, it would be `git@github.com:Gelbpunkt/idlerpg-guide.git`._
 
 This will create a new directory named "idlerpg-guide". In it, you will find the book's files. The actual contents of the book are found in the `src` directory.
 
@@ -76,7 +76,7 @@ _NOTE: This will be easier if you have cargo and the mdbook crate installed. If 
 
 If you want to check what your changes look like before you save them, mdbook offers options.
 
-Open your terminal in the project directory `idlerpg-guidebook` and enter the following:
+Open your terminal in the project directory `idlerpg-guide` and enter the following:
 
 ```sh
 $ mdbook build
@@ -89,7 +89,7 @@ This will run a webserver for the files. You can open `http://localhost:3000` in
 
 Saving your work using Ctrl+S is not enough if you want to publish it; you'll want to _commit_ it, so that the version control system Git knows this is a new version.
 
-To do this, open your terminal in the `idlerpg-guidebook` directory and use the following commands:
+To do this, open your terminal in the `idlerpg-guide` directory and use the following commands:
 
 ```sh
 $ git add ./src/page.md
@@ -99,33 +99,33 @@ $ git push
 
 - `$ git add` marks the file(s) as ready to commit. This is useful in projects, where you may have changes in multiple files, but only want to commit a few.
 - `$ git commmit` commits the files in git. The `-m "Commit message here!"` is known as the commit message. In it, you should describe briefly what you did.
-- `$ git push` uploads, or pushes the commited files to a remote repository, in this case, your repository on our GitLab. From there, you can create a merge request to have your changes implemented into our project.
+- `$ git push` uploads, or pushes the commited files to a remote repository, in this case, your repository on GitHub. From there, you can create a merge request to have your changes implemented into our project.
 
 Commited files are different to saved files in that any commit exists simultaneously. If you save a file, make changes and save again, the old save is gone, but different commmits can be accessed at all times.
 
 Make sure to replace `./src/page.md` with the file path to the newly added and/or changed files. `SUMMARY.md` should always be included if you created a new page.
 Also replace `Commit message here!` with a short note on what you did, i.e. `Added new page contributing.md`. Commit messages have a maximum of 50 characters, so keep it short and spicy!
 
-After pushing, a CI (continuous integration) on GitLab will build the html files and bundle them in a `.zip` archive. That way, you can download the files and view them in your web browser.
+After pushing, a CI (continuous integration) on GitHub will build the html files and provide a preview for you. To view this, make sure you have the previews enabled by going to the repository settings on GitHub, selecting the "Pages" tag and selecting the `gh-pages` branch as the deployment source.
 
-You can find the zip files in your own repo, in the CI/CD tab, subsection Pipelines. Find the latest pipeline, and in the right side, download the html artifact. Simply unpack the downloaded `.zip` archive and open `index.html` in your preferred web browser, et voilà, you can now see what your changes look like in action.
+![image](img/github_pages_setup.png)
 
-![image](img/ci-tab.png) ![image](img/download-artifacts.png)
+When you push your changes, you will now be able to view a preview at https://yourusername.github.io/idlerpg-guide.
 
 _Of course, previewing changes this way is a bit tedious, so we recommend getting rust and the mdbook crate and using the method mentioned above._
 
-## Creating a merge request
+## Creating a pull request
 
 Great! Your files are now uploaded, we're ready to make the changes official.
 
-Head to your repository on our GitLab, the URL is `https://git.travitia.xyz/<your username>/idlerpg-guide`.
+Head to your repository on GitHub, the URL is `https://github.com/<your username>/idlerpg-guide`.
 
-At the top of the page, you should already see a hint saying that you pushed changes with a "create merge request" button next to it. Click it!
+At the top of the page, you should already see a hint saying that you pushed changes with a "create pull request" button next to it. Click it!
 
-Feel free to explore this page to your liking, but the important part is giving your merge request a title and a description.
+Feel free to explore this page to your liking, but the important part is giving your pull request a title and a description.
 
-It is completely fine to use the commit message as the merge request's title, as long as we know what the changes are.
+It is completely fine to use the commit message as the pull request's title, as long as we know what the changes are.
 
 In the description, you should add your name (_so we can add you to the book authors_), among other things you deem important.
 
-Finally, hit the "open merge request" button! We'll take over from here. But don't forget to check back if we have reviews for your changes, you might be asked to change parts with a new commit.
+Finally, hit the "open pull request" button! We'll take over from here. But don't forget to check back if we have reviews for your changes, you might be asked to change parts with a new commit.
